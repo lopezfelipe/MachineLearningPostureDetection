@@ -68,7 +68,7 @@ img {
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Poor posture is a very common condition. Posture issues are commonly caaused by muscular imbalances, meaning that some muscles are too tight or too weak. Poor posture can result in several conditions, the most common is back pain, which according to the <a href="http://www.dlchiropractors.com/uploads/5/8/0/6/58063233/back_pain_facts_and_statistics.pdf">American Chiropractic Association</a> is experienced by 70 to 85 percent of people at some point. Posture problems can be greatly improved by performing the right weightlifting exercises. If, however, an inappropriate posture is maintained while lifting weights, posture problems get even worse. Assistance on weightlifting is often provided by personal trainers. However, measurements gathered with wearable devices may be used as an alternative for automated assistance and posture correction. This report describes a machine learning approach for automatic quality recognition of posture in weightlifting. Data was gathered from accelerometers mounted on the belt, forearm, arm, and dumbbell of six participants to predict the manner in which they exercise.</p>
+<p>Poor posture is a very common condition. Posture issues are commonly caused by muscular imbalances, meaning that some muscles are too tight or too weak. Poor posture can result in several conditions, the most common is back pain, which according to the <a href="http://www.dlchiropractors.com/uploads/5/8/0/6/58063233/back_pain_facts_and_statistics.pdf">American Chiropractic Association</a> is experienced by 70 to 85 percent of people at some point. Posture problems can be greatly improved by performing the right weightlifting exercises. If, however, an inappropriate posture is maintained while lifting weights, posture problems get even worse. Assistance on weightlifting is often provided by personal trainers. However, measurements gathered with wearable devices may be used as an alternative for automated assistance and posture correction. This report describes a machine learning approach for automatic quality recognition of posture in weightlifting. Data was gathered from accelerometers mounted on the belt, forearm, arm, and dumbbell of six participants to predict the manner in which they exercise.</p>
 </div>
 <div id="data" class="section level2">
 <h2>Data</h2>
@@ -138,7 +138,7 @@ print(myRandomForest$finalModel)</code></pre>
 ## C    0   20 2025    9    0     0.01412
 ## D    0    3   25 1899    3     0.01606
 ## E    0    1    6    9 2149     0.00739</code></pre>
-<p>A random forest is constructed with 500 trees and 27 variables randomly sampled at each split. The in-sample classification error was found at 0.0160622 in the worst case, proving very accurate.</p>
+<p>A random forest is constructed with 500 trees and 27 variables randomly sampled at each split. The in-sample classification error was found at 0.016 in the worst case, proving very accurate.</p>
 <p>The obtained model is then used to make predictions in the validation data set.</p>
 <pre class="r"><code>prediction &lt;- predict(myRandomForest, myTesting)
 cM &lt;- confusionMatrix(myTesting$classe, prediction)
@@ -147,7 +147,7 @@ print(cM$overall)</code></pre>
 ##          0.990          0.988          0.988          0.992          0.285 
 ## AccuracyPValue  McnemarPValue 
 ##          0.000            NaN</code></pre>
-<p>The overall statistics in the validation set show an impressive accuracy: 0.9901861, which is very promising now that we have to make predictions for the testing set.</p>
+<p>The overall statistics in the validation set show an impressive accuracy: 0.99, which is very promising now that we have to make predictions for the testing set.</p>
 </div>
 <div id="testing" class="section level2">
 <h2>Testing</h2>

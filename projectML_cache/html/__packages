@@ -1,0 +1,14 @@
+base
+data.table
+dplyr
+ggplot2
+lubridate
+lattice
+caret
+AppliedPredictiveModeling
+randomForest
+plotrix
+TeachingDemos
+plotmo
+earth
+rpart

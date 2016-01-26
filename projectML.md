@@ -3,7 +3,7 @@ Felipe Lopez
 
 ## Introduction
 
-Poor posture is a very common condition. Posture issues are commonly caaused by muscular imbalances, meaning that some muscles are too tight or too weak.
+Poor posture is a very common condition. Posture issues are commonly caused by muscular imbalances, meaning that some muscles are too tight or too weak.
 Poor posture can result in several conditions, the most common is back pain, which according to the [American Chiropractic Association](http://www.dlchiropractors.com/uploads/5/8/0/6/58063233/back_pain_facts_and_statistics.pdf) is experienced by 70 to 85 percent of people at
 some point. Posture problems can be greatly improved by performing the right weightlifting exercises. If, however, an inappropriate posture is maintained
 while lifting weights, posture problems get even worse. Assistance on weightlifting is often provided by personal trainers. However, measurements
@@ -112,7 +112,7 @@ print(myRandomForest$finalModel)
 ```
 
 A random forest is constructed with 500 trees and  27 variables randomly sampled at each
-split. The in-sample classification error was found at 0.0160622 in the worst case, proving very accurate.
+split. The in-sample classification error was found at 0.016 in the worst case, proving very accurate.
 
 The obtained model is then used to make predictions in the validation data  set.
 
@@ -129,7 +129,7 @@ print(cM$overall)
 ##          0.000            NaN
 ```
 
-The overall statistics in the validation set show an impressive accuracy: 0.9901861, which is very promising now that we have to make predictions
+The overall statistics in the validation set show an impressive accuracy: 0.99, which is very promising now that we have to make predictions
 for the testing set.
 
 ## Testing
