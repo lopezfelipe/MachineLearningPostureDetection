@@ -69,8 +69,6 @@ testing <- subset(testing, select = c(names(training)[1:length(training)-1],"pro
 After cleaning the data, we are left with `r dim(training)[1]` observations of `r dim(training)[2]-1` regressors in the training set, and 
 `r dim(testing)[1]` data points in the testing set.
 
-A first plot is made to observe the distribution of each
-
 ## Data partitioning
 
 The cleaned training set is partitioned into a pure training data set (60%) and a validation data set (40%). The former will be used for training and the

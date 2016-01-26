@@ -66,8 +66,6 @@ testing <- subset(testing, select = c(names(training)[1:length(training)-1],"pro
 After cleaning the data, we are left with 19622 observations of 52 regressors in the training set, and 
 20 data points in the testing set.
 
-A first plot is made to observe the distribution of each
-
 ## Data partitioning
 
 The cleaned training set is partitioned into a pure training data set (60%) and a validation data set (40%). The former will be used for training and the
@@ -112,7 +110,7 @@ print(myRandomForest$finalModel)
 ```
 
 A random forest is constructed with 500 trees and  27 variables randomly sampled at each
-split. The in-sample classification error was found at 0.016 in the worst case, proving very accurate.
+split. The in-sample classification error was found at 0.0160622 in the worst case, proving very accurate.
 
 The obtained model is then used to make predictions in the validation data  set.
 
@@ -129,7 +127,7 @@ print(cM$overall)
 ##          0.000            NaN
 ```
 
-The overall statistics in the validation set show an impressive accuracy: 0.99, which is very promising now that we have to make predictions
+The overall statistics in the validation set show an impressive accuracy: 0.9901861, which is very promising now that we have to make predictions
 for the testing set.
 
 ## Testing
